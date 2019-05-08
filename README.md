@@ -110,3 +110,51 @@ Agora que você já está com a **venv** ativada, para instalar o **Django**, ba
 ```pip install -r requirements.txt```
 
 - Este comando vai instalar todas as dependências que foram instaladas no projeto.
+
+## 4. Criando seu projeto
+Você já está dentro da **venv** e também já está com todos requerimentos instalados. Vamos agora criar o projeto pelo django.
+
+### 4.1. Criando o projeto django
+Na pasta onde está a **venv** que deve ser a pasta que você está mandando pro **github**, você deve digitar:
+
+```django-admin startproject ptaDjango```
+
+- Agora você criou o projeto do django e basta entrar na pasta dele.
+- Digite o comando:
+
+```cd ptaDjango```
+
+### 4.2. Iniciando uma app
+Agora que já estamos dentro da pasta do projeto, nós podemos criar um *app*, idealmente você deve separar seus projetos em *apps* diferentes como *users, blog, core, contato*... Fazendo isso seu projeto será muito mais amigável para o desenvolvedor.
+
+- No terminal, use o comando:
+
+```python manage.py startapp core```
+
+- *Core* é o *app* principal do projeto e nós acabamos de criar ele.
+- Agora basta você ir em `settings.py` que fica localizado em ***ptaDjango/ptaDjango*** e colocar em ***INSTALLED_APPS*** o *app core*, `'core'`.
+
+### 4.3. Migrações
+Estamos com *quase* tudo pronto, mas mesmo que agora ainda não seja necessário, é bom que você tenha em mente que sempre que baixar o projeto ou mudar de *branch* deverá executar os dois comandos:
+
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+- Esses comandos lidam com as mudanças no *banco de dados* e muitas vezes seu projeto pode não rodar porque você não utilizou os dois.
+
+### 4.4 Rodando o projeto
+Finalmente você vai rodar o projeto e ver um exemplo do **django** rodando.
+
+- Digite o comando:
+
+```
+python manage.py runserver
+```
+
+- Com esse comando seu *app* vai rodar e você será capaz de ver uma **url** no terminal. Copiando e colando a **url** num navegador abrirá uma mensagem do **django** de sucesso como esta:
+
+![imagem de sucesso do django](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/eb_django_deployed.png)
+
+- Se você viu essa imagem ou algo do tipo, deu tudo certo, parabéns.
