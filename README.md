@@ -19,7 +19,7 @@ Vamos precisar de três coisas essenciais para este treinamento: **Python**, **V
 
 - No ***linux***, pode ser necessário você usar:
 
-```python3 --version````
+```python3 --version```
 
 - No windows, caso você não tenha selecionado a opção durante a instalação, pode ser necessário configurar a [variável de ambiente](https://python.org.br/instalacao-windows/) do **python**.
 
