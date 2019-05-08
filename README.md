@@ -13,11 +13,21 @@ Vamos precisar de três coisas essenciais para este treinamento: **Python**, **V
 
 ```sudo apt install python3.7```
 
-Confiram se o python foi instalado digitando python --version
+- Confiram se o **python** foi instalado digitando:
 
-- No linux, pode ser necessário você usar python3 --version
-- No windows, caso você não tenha selecionado a opção durante a instalação, pode ser necessário configurar a [variável de ambiente](https://python.org.br/instalacao-windows/) do python.
+```python --version```
 
+- No ***linux***, pode ser necessário você usar:
+
+```python3 --version````
+
+- No windows, caso você não tenha selecionado a opção durante a instalação, pode ser necessário configurar a [variável de ambiente](https://python.org.br/instalacao-windows/) do **python**.
+
+- Confiram se o **pip** foi instalado digitando: 
+
+```pip --version```
+
+- Geralmente o **pip** já vem instalado com o python, pois é ele que é utilizado para fazer instalações adicionais como o **django** por exemplo.
 
 ### 1.2. Instalando a Virtualenv na sua máquina
 
@@ -54,14 +64,14 @@ Pelo terminal, vocês vão entrar na pasta onde seu projeto vai ficar:
 ```cd django-pta```
 
 #### 2.2. Criar o ambiente virtual
-Agora que você já está dentro da pasta, você deve criar sua virtualenv.
+Agora que você já está dentro da pasta, você deve criar sua *virtualenv*.
 
 - Digite no terminal:
 
 ```virtualenv venv```
 
-- Por convenção, utilizamos o nome venv, mas você pode adicionar qualquer nome.
-- Obs: Lembrem-se de adicionar venv/ no gitignore para caso a venv seja criada dentro da pasta do projeto, ela não ir para o github.
+- Por convenção, utilizamos o nome *venv*, mas você pode adicionar qualquer nome.
+- Obs: Lembrem-se de adicionar ***venv/*** no ***gitignore*** para caso a **venv** seja criada dentro da pasta do projeto, ela não ir para o **github**.
 
 #### 2.3. Iniciar o ambiente virtual
 Finalmente, vamos iniciar o ambiente virtual para realizar as instalações adicionais do ***python***.
@@ -76,7 +86,7 @@ Finalmente, vamos iniciar o ambiente virtual para realizar as instalações adic
 
 ```source venv/bin/activate```
 
-- Lembrem-se que para desativar a virtualenv, basta utilizar o comando:
+- Lembrem-se que para **desativar** a ***virtualenv***, basta utilizar o comando:
 
 ```deactivate```
 
