@@ -19,7 +19,7 @@ Vamos precisar de três coisas essenciais para este treinamento: **Python**, **V
 
 - No ***linux***, pode ser necessário você usar:
 
-```python3 --version```
+```python3 --version````
 
 - No windows, caso você não tenha selecionado a opção durante a instalação, pode ser necessário configurar a [variável de ambiente](https://python.org.br/instalacao-windows/) do **python**.
 
@@ -90,3 +90,24 @@ Finalmente, vamos iniciar o ambiente virtual para realizar as instalações adic
 
 ```deactivate```
 
+## 3. Instalando o **Django**
+
+- Agora que você já está com a **venv** ativada, para instalar o **Django**, basta fazer:
+
+```pip install django```
+
+- Agora você deve verificar se o **Django** foi instalado, basta digitar:
+
+```pip freeze```
+
+- Esse comando vai listar todas as dependências instaladas na **venv**.
+- Sempre que você instalar uma dependência nova, você deve usar:
+
+```pip freeze > requirements.txt```
+
+- Esse comando vai escrever as dependências num arquivo chamado **requirements.txt**
+- Lembre-se de sempre que baixar o projeto ou mudar de *branch* usar o comando (com a **venv** ativada):
+
+```pip install -r requirements.txt```
+
+- Este comando vai instalar todas as dependências que foram instaladas no projeto.
