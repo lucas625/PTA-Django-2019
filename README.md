@@ -91,8 +91,7 @@ Finalmente, vamos iniciar o ambiente virtual para realizar as instalações adic
 ```deactivate```
 
 ## 3. Instalando o **Django**
-
-- Agora que você já está com a **venv** ativada, para instalar o **Django**, basta fazer:
+Agora que você já está com a **venv** ativada, para instalar o **Django**, basta fazer:
 
 ```pip install django```
 
