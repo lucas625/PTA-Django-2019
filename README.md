@@ -117,7 +117,7 @@ Você já está dentro da **venv** e também já está com todos requerimentos i
 ### 4.1. Criando o projeto django
 Na pasta onde está a **venv** que deve ser a pasta que você está mandando pro **github**, você deve digitar:
 
-```django-admin startproject ptaDjango```
+```django-admin startproject ptaDjango .```
 
 - Agora você criou o projeto do django e basta entrar na pasta dele.
 - Digite o comando:
@@ -135,7 +135,7 @@ Agora que já estamos dentro da pasta do projeto, nós podemos criar um *app*, i
 - Agora basta você ir em `settings.py` que fica localizado em ***ptaDjango/ptaDjango*** e colocar em ***INSTALLED_APPS*** o *app core*, `'core'`.
 
 ### 4.3. Migrações
-Estamos com *quase* tudo pronto, mas mesmo que agora ainda não seja necessário, é bom que você tenha em mente que sempre que baixar o projeto ou mudar de *branch* deverá executar os dois comandos:
+Estamos com *quase* tudo pronto, mas mesmo que agora ainda não seja necessário, é bom que você tenha em mente que sempre que baixar o projeto ou fazer alterações no model, devem rodar esses comandos:
 
 ```
 python manage.py makemigrations
