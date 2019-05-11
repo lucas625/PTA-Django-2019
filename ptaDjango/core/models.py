@@ -8,6 +8,7 @@ class Post(models.Model):
     updated_date = models.DateTimeField(auto_now=True)
 
     class Meta:
+        ordering = ['-updated_date']
         verbose_name = 'Publicação'
         verbose_name_plural = 'Publicações' # avisa pro django que tem plural
 
